@@ -1,0 +1,209 @@
+.email-flow-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.reactflow-wrapper {
+  flex-grow: 1;
+  height: 100%;
+}
+
+.node-palette {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.node-palette-header {
+  font-weight: bold;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+.node-item {
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  cursor: grab;
+  user-select: none;
+  font-size: 14px;
+  text-align: center;
+}
+
+.cold-email {
+  background: #e3f2fd;
+  border: 1px solid #90caf9;
+}
+
+.wait-delay {
+  background: #f3e5f5;
+  border: 1px solid #ce93d8;
+}
+
+.lead-source {
+  background: #e8f5e9;
+  border: 1px solid #a5d6a7;
+}
+
+.campaign-panel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.campaign-name-input {
+  font-size: 16px;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-width: 200px;
+}
+
+.save-button {
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 7px 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.save-button:hover {
+  background: #388e3c;
+}
+
+.save-button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+/* Custom Nodes Styling */
+.custom-node {
+  border-radius: 6px;
+  padding: 0;
+  width: 200px;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.node-header {
+  padding: 8px;
+  font-weight: bold;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.cold-email-node {
+  border: 2px solid #90caf9;
+  background: white;
+}
+
+.cold-email-node .node-header {
+  background: #e3f2fd;
+  border-bottom: 1px solid #90caf9;
+}
+
+.wait-node {
+  border: 2px solid #ce93d8;
+  background: white;
+}
+
+.wait-node .node-header {
+  background: #f3e5f5;
+  border-bottom: 1px solid #ce93d8;
+}
+
+.lead-source-node {
+  border: 2px solid #a5d6a7;
+  background: white;
+}
+
+.lead-source-node .node-header {
+  background: #e8f5e9;
+  border-bottom: 1px solid #a5d6a7;
+}
+
+.node-content {
+  padding: 8px;
+}
+
+.node-field {
+  margin-bottom: 5px;
+}
+
+.node-body {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.node-empty {
+  color: #999;
+  font-style: italic;
+  display: block;
+  padding: 5px 0;
+}
+
+/* Node Editor Panel */
+.node-editor {
+  width: 300px;
+  background: white;
+  border-left: 1px solid #ddd;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.node-editor h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.node-editor button {
+  background: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.node-editor button:hover {
+  background: #d32f2f;
+}
